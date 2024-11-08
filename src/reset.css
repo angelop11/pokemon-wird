@@ -1,0 +1,126 @@
+/* Reset CSS básico */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    min-height: 100vh;
+}
+
+html {
+    font-size: 100%;
+    -webkit-text-size-adjust: 100%;
+    -moz-tab-size: 4;
+    tab-size: 4;
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1.5;
+    background-color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+    font-size: inherit;
+    border: none;
+    background: none;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+img,
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+form {
+    display: block;
+}
+
+input,
+select,
+textarea {
+    background-color: transparent;
+    outline: none;
+}
+
+:focus {
+    outline: 2px solid #005fcc;
+    outline-offset: 2px;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #ccc;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 2px solid #ccc;
+    width: 18px;
+    height: 18px;
+    border-radius: 3px;
+    position: relative;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked::before,
+input[type="radio"]:checked::before {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-color: #005fcc;
+    border-radius: 50%;
+    top: 2px;
+    left: 2px;
+}
+
+body,
+input,
+textarea,
+button {
+    font-family: 'Arial', sans-serif;
+    font-size: 1rem;
+}
